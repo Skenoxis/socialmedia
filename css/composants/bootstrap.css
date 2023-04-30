@@ -1,0 +1,84 @@
+.d-flex {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(142, 221, 247);
+    width: 30%;
+    margin: auto;
+    height: 50vh;
+    margin-top: 60px;
+    border-radius: 25px;
+    animation: pop_up_publi 2s;
+}
+
+.retour{
+    background-color: rgb(197, 34, 12);
+    border: none;
+    border-radius: 20px;
+}
+
+.retour:hover{
+    background-color: rgb(151, 26, 9);
+    border: none;
+}
+
+.btn_connection {
+    color: #00afff;
+}
+
+.btn.btn-primary.btn_inscription{
+    background-color: #00afff;
+    border: 1px solid rgb(170, 217, 255);
+    border-radius: 20px;
+}
+
+.btn.btn-primary.btn_inscription:hover{
+    background-color: #035d86;
+    border: 1px solid rgb(170, 217, 255);
+    border-radius: 20px;
+}
+
+.btn.btn-primary.btn_connexion{
+    background-color: #00afff;
+    border: 1px solid rgb(170, 217, 255);
+    border-radius: 20px;
+}
+
+.btn.btn-primary.btn_connexion:hover{
+    background-color: #035d86;
+    border: 1px solid rgb(170, 217, 255);
+    border-radius: 20px;
+}
+
+.btn_suppression{
+    background-color: #e42c2c;
+    border: 1px solid rgb(246, 157, 157);
+    border-radius: 20px;
+}
+
+.btn_suppression:hover{
+    background-color: #951919;
+    border: none;
+}
+
+.btn_annuler_suppression{
+    background-color: #00afff;
+    border: 1px solid rgb(170, 217, 255);
+    border-radius: 20px;
+}
+
+.btn.btn-primary.btn_envoyer_inscription{
+    background-color: #00afff;
+    border: 1px solid rgb(170, 217, 255);
+    border-radius: 20px;
+}
+
+.btn.btn-primary.btn_envoyer_inscription:hover{
+    background-color: #056b9b;
+}
+
+
+@media screen and (max-width: 535px) {
+    .d-flex{
+        width: 100%;
+    }
+}

@@ -1,0 +1,148 @@
+.publications {
+    display: grid;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(88, 88, 88);
+    font-size: 30px;
+    margin: auto;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 50px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.publications h1 {
+    font-size: 40px;
+    margin-top: -25px;
+}
+
+
+.publication {
+    display: block;
+    border: 2px solid rgb(155, 165, 166);
+    height: 50vh;
+    background: rgb(112, 178, 200);
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.pop_up {
+    display: none;
+}
+
+.contenu_publication {
+    padding: 500px;
+}
+
+.pop_up_show {
+    display: flex;
+    position: fixed;
+    animation: pop_up_publi 1s;
+    background-color: rgb(49, 135, 201);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60%;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    z-index: 1;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 125px;
+}
+
+.date {   
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.delete {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.content {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80%;
+    padding-left: 10px;
+
+}
+
+.tag {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.envoi_publication{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.envoi_publication textarea{
+    color: rgb(84, 84, 84);
+    border-radius: 7px;
+}
+
+#liste_tags{
+    margin-right: auto;
+    color: #454545;
+}
+
+#liste_tags option{
+    color: #00afff;
+}
+
+.btn_envoi_publication{
+    margin-left: auto;
+    background-color: #00afff;
+    border-radius: 10px;
+    border: 1px solid #adb0b3;
+    padding: 2px;
+}
+
+.btn_envoi_publication:hover{
+    background-color: #097aae;
+    border: 1px solid #adb0b3;
+
+}
+
+.contenu p{
+    font-weight: 300;
+}
+
+
+@media screen and (max-width : 360px) {
+    .publications{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 735px) {
+    .publications{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 525px) {
+    .publications{
+        width: 90%;
+    }
+}

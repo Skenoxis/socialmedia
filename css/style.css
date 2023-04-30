@@ -1,0 +1,112 @@
+@import url(composants/buttons.css);
+@import url(composants/footer.css);
+@import url(composants/sidebar.css);
+@import url(composants/publications.css);
+@import url(composants/bootstrap.css);
+@import url(composants/suppression.css);
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    color: white;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    transition: 2s;
+}
+
+body {
+    background-color: rgb(84, 84, 84);
+    animation: pop_up_publi 3s;
+}
+
+.titre{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width : 360px) {
+    p{
+        font-size: 23px;
+    }
+    .tag{
+        font-size: 18px;
+    }
+    .img_btn_sup {
+        width: 24px;
+    }
+    .date {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width : 525px) {
+    p{
+        font-size: 25px;
+    }
+    .tag{
+        font-size: 20px;
+    }
+    .img_btn_sup {
+        width: 27px;
+    }
+    .date {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width : 735px) {
+    p{
+        font-size: 27px;
+    }
+    .tag{
+        font-size: 22px;
+    }
+    .img_btn_sup {
+        width: 27px;
+    }
+    .date {
+        font-size: 18px;
+    }
+}
+
+
+@keyframes pop_up_publi {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes sidebar_show {
+    from{
+        left: -200px;
+    }
+    to{
+        left: 0;
+    }
+}
+
+@keyframes sidebar_hide {
+    from{
+        left: 0;
+    }
+    to{
+        left: -200px;
+    }
+}
+
+@keyframes pop_up_sup {
+    from{
+        top: -200px;
+    }
+    to{
+        top: 73px;
+    }
+}
